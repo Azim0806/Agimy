@@ -13,7 +13,42 @@
   </head>
   <body id="top">
     
+
+
     
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "127194657136510");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v17.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
 
 
 
@@ -75,7 +110,8 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
     
-                    
+               
+    
     
                 </ul>
             </div>
@@ -488,20 +524,21 @@
             <!-- Row -->
             <div class="row g-0">
 
-                <!-- Col -->
+             
+                      <!-- Col -->
                 <div class="col-md-6 p-4 border-custom">
-                        <h3 class="fotlogo"><a href="#"><img  src="logo1.png" alt="">ㅤㅤㅤㅤAgimy.</a></h3>
-                        
-                </div>
-                        
+                    <h3 class="fotlogo"><a href="#"><img  src="logo1.png" alt="">ㅤㅤㅤㅤAgimy.</a></h3>
+                    
+            </div>
+                          
 
                 <!-- Col -->
                 <div class="col-md-3 p-4 border-custom">
-                        <h5>Links</h5>
+                        <h5>Store</h5>
                         <ul>
-                            <li><a href="#hero">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#work">Work</a></li>
+                            <li><a href="Youtube.html" target="_blank">Store1</a></li>
+                            <li><a href="Instagram.html" target="_blank">Store2</a></li>
+                            <li><a href="Tiktok.html" target="_blank">Store3</a></li>
                         </ul>
                 </div>
 
@@ -534,6 +571,10 @@
 
     <!-- Scroll to top -->
     <a href="#top" class="icon scroll-to-top"><i class="las la-arrow-up"></i></a>
+
+
+
+
     
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

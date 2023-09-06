@@ -1,0 +1,35 @@
+.instaimg{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+  }
+.itemname{
+  display: flex;
+  justify-content: center;
+ background-color: black;
+ color: aliceblue;
+ padding: 7px 4px 7px 4px;
+ 
+}
+.link{
+  text-decoration: none;
+}
+.foot{
+  margin-top: 25%;
+
+
+  
+
+}
+#notice{
+  color: rgb(202, 202, 202);
+
+}
+#highnotice{
+  color: black;
+  
+}
